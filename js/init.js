@@ -1,7 +1,10 @@
+import { Game } from './states/game.js';
 
-
-window.onload = function(){
-	console.log("Empezando!");
-	let game = new Phaser.Game(490,570,Phaser.AUTO);
-
+const config = {
+	type: Phaser.AUTO,
+	width: 490,
+	height: 570,
+	scene: [Game]
 }
+
+var game = new Phaser.Game(config);
